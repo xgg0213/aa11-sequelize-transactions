@@ -105,6 +105,7 @@ app.get('/managed', async (req, res, next) => {
             await amy.update({
                 balance: amy.balance - 200
             }
+            // need to associate both with transaction: t
             ,{
                 transaction: t
             }
